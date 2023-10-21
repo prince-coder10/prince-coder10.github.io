@@ -1,0 +1,92 @@
+ // this is the container for an image spl_autoload_register
+
+ <div class="container">
+                <div class="wrapper">
+                  <img src="./assets/dummy1.jpg" alt="browser dosent support images"><br>
+                  <img src="./assets/dummy2.jpg" alt="browser dosent support images"><br>
+                  <img src="./assets/dummy3.jpg" alt="browser dosent support images"><br>
+                  <img src="./assets/dummy4.jpg" alt="browser dosent support images"><br>
+                  <img src="./assets/dummy5.jpg" alt="browser dosent support images"><br>
+                  <img src="./assets/dummy6.jpg" alt="browser dosent support images"><br>
+                  <img src="./assets/dummy7.jpg" alt="browser dosent support images"><br>
+                  <br>
+                  
+                </div>
+                
+              </div>
+
+
+              // style for the container.container
+              <style>
+              .container {
+                width: 300px;
+                border: 10px solid #ddd;
+                overflow: hidden;
+                border-radius: 5px;
+                box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.3);
+                box-sizing: border-box;
+                min-height: 100%;
+                margin: auto;
+              }
+              .wrapper img {
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+              
+                animation: slide 10s infinite linear;
+              }
+              .wrapper {
+                width: 100%;
+                display: flex;
+                align-content: center;
+              }
+              @keyframes slide {
+                0% {
+                  transform: translateX(0);
+                }
+                25% {
+                  transform: translateX(0);
+                }
+                30% {
+                  transform: translateX(-100%);
+                }
+                50% {
+                  transform: translateX(-100%);
+                }
+                55% {
+                  transform: translateX(-200%);
+                }
+                75% {
+                  transform: translateX(-200%);
+                }
+                80% {
+                  transform: translateX(-300%);
+                }
+                100% {
+                  transform: translateX(-300%);
+                }
+              }
+</style>
+// end of container 
+
+
+// social media icons and hanles 
+
+<div id="social">
+    <img src="./assets/facebook.png" alt="facebook icon" width="40px"> <p>@Prince Mbakwe</p><br>
+    <img src="./assets/github.png" alt="github icon" width="40px">     <p>@Prince Mbakwe</p><br>
+    <img src="./assets/linkedin.png" alt="linkedin icon" width="40px"> <p>@Prince Mbakwe</p><br>
+    
+    <br>
+    <div id="bs-info">
+      <img src="./assets/location.png" alt="location  icon" id="loc" width="40px"> <br> <p>Lagos, Nigeria</p>
+      <img src="./assets/mail.png" alt="mail icon" id="mail"width="40px"> <br> <p>Send me an E-mail @ <b>princelycoding.org@gmail.com</b> </p>
+      <img src="./assets/phone.png" alt="phone icon" id="phone" width="40px"> <br> <p>place a call to <b>+2348122303939</b> </p>
+    </div>
+    
+  </div>
+
+  // end 
+
+
+

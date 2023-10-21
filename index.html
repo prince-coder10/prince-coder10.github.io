@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <html lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" type="text/css" href="./src/style.css" />
+      <script
+        src="https://kit.fontawesome.com/8c505afbe5.js"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init("laYHw_YPNLL2GpJMT");
+        })();
+      </script>
+      <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon" />
+      <title>Prince Mbakwe</title>
+      <body>
+        <section id="sidebar">
+          <span id="menu" class="menu"
+            ><i class="fa-solid fa-bars" style="color: #ffffff"></i
+          ></span>
+          <div id="navbar">
+            <span id="menu-close" class="close"
+              ><i class="fa-solid fa-x" style="color: #000000"></i
+            ></span>
+            <a class="link" href="#content">
+              <img src="./assets/home.png" alt="home icon" width="40px" />
+              <br />Home</a
+            >
+            <a class="link" href="#about-me"
+              ><img src="./assets/about.png" alt="profile icon" width="40px" />
+              <br />
+              About</a
+            >
+            <a class="link" href="#my-project"
+              ><img
+                src="./assets/project.png"
+                alt="folder icon"
+                width="40px"
+                class="prj"
+              />
+              <br />
+              Projects</a
+            >
+            <a class="link" href="#contact-me"
+              ><img src="./assets/mail.png" alt="contact icon" width="40px" />
+              <br />
+              Contact</a
+            >
+          </div>
+        </section>
+        <div id="content" class="scroll-target">
+          <div class="to-top-cont" id="top-btn">
+            <div class="to-top">
+              <div class="bar left"></div>
+              <div class="bar right"></div>
+            </div>
+          </div>
+          <!-- your content begins-->
+
+          <div class="typing-container">
+            <h1 id="sentence" class="hidden2">
+              Hey, <span id="feature-text">I'm Prince Mbakwe</span>
+            </h1>
+
+            <span class="input-cursor"></span>
+          </div>
+
+          <div class="intro home">
+            <div class="intro-txt hidden">
+              <p>
+                Welcome to my digital space! You might know me as
+                prince-coder10. I'm a driven junior frontend developer hailing
+                from vibrant Lagos, Nigeria. I'm not just a programmer, I'm a
+                tech enthusiast with a passion for crafting seamless user
+                experiences. Curiosity drives me to create innovative solutions
+                that push boundaries. But that's just the beginning. There's
+                more to discover in the About section.
+              </p>
+
+              <button class="btn" id="downloadBtn">Download Resume</button>
+            </div>
+            <div class="profile">
+              <img src="./assets/portfolio_portrait.jpg" alt="profile" />
+            </div>
+            <div class="scroll">
+              <div class="ball"></div>
+            </div>
+          </div>
+
+          <div class="about" id="about-me">
+            <h2 class="hidden">About</h2>
+            <div class="flex">
+              <p class="hidden">
+                Innovation has always been my driving force. The thrill of
+                creating something new, something that pushes boundaries, is
+                what truly ignites my passion. Discovering that I could bring my
+                ideas to life through websites and web applications was a
+                revelation. I embarked on my coding journey at a tender age,
+                eager to unlock the potential of the digital realm. With every
+                line of code, I uncovered a new world of possibilities. This
+                early start laid the foundation for the programmer I am today.
+                Today, as a dedicated junior frontend developer based in Lagos,
+                Nigeria, I am constantly fueled by my insatiable appetite for
+                innovation. It's not just about building websites; it's about
+                crafting experiences that leave a lasting impression.
+              </p>
+            </div>
+          </div>
+          <div class="project" id="my-project">
+            <h2>Project library</h2>
+
+            <div class="card-container hidden">
+              <div class="card hidden">
+                <div class="card-media">
+                  <img src="/assets/netflix-pic.png" alt="project media" />
+                </div>
+                <div class="card-text">
+                  <p class="headline">Netflix Clone</p>
+                  <p class="card-description">
+                    A netflix clone built with the React js libary
+                  </p>
+                  <div class="built-with">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JS</p>
+                    <p>ReactJs</p>
+                    <p>API</p>
+                    <p>Axios</p>
+                  </div>
+                </div>
+                <button type="button" class="action-btn">
+                  <a
+                    href="https://netflix-clone-app-10.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View</a
+                  >
+                </button>
+              </div>
+              <div class="card hidden">
+                <div class="card-media" id="todo">
+                  <img src="/assets/todo-app.jpg" alt="project media" />
+                </div>
+                <div class="card-text">
+                  <span>
+                    <p class="headline">Todo List Web-app</p>
+                    <p class="card-description">
+                      A responsive and user friendly web-app with light and dark
+                      themes
+                    </p>
+                  </span>
+                  <div class="built-with">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JS</p>
+                  </div>
+                </div>
+                <button type="button" class="action-btn">
+                  <a
+                    href="https://prince-coder10.github.io/todo-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View</a
+                  >
+                </button>
+              </div>
+              <div class="card hidden">
+                <div class="card-media">
+                  <img src="/assets/guardian.jpg" alt="project media" />
+                </div>
+                <div class="card-text">
+                  <p class="headline">GuardianCare</p>
+                  <p class="card-description">
+                    A web-app that helps children suffering from domestic
+                    violence
+                  </p>
+                  <div class="built-with">
+                    <p>node.js</p>
+                    <p>ReactJs</p>
+                    <p>API</p>
+                    <p>Mongo Db</p>
+                  </div>
+                </div>
+                <button type="button" class="action-btn">
+                  <a
+                    href="https://devpost.com/software/childsupport-app"
+                    target="_blank"
+                    >View</a
+                  >
+                </button>
+              </div>
+            </div>
+            <button class="more">
+              <a href="./projects/projectLibs.html">More</a>
+            </button>
+          </div>
+
+          <div class="contact" id="contact-me">
+            <h2>Contact me</h2>
+
+            <div class="contact-form hidden2">
+              <form id="contact-form">
+                <input type="hidden" id="contact_number" />
+                <label for="fullName">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="from_name"
+                  placeholder="Enter your full name"
+                  class="inputs"
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="user_email"
+                  placeholder="Enter your email address"
+                  class="inputs"
+                />
+                <label for="msg">Message</label>
+                <textarea
+                  name="msg"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  class="inputs"
+                  placeholder="Send me a message"
+                ></textarea>
+                <button type="button" onclick="SendMail()">Send</button>
+              </form>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-box">
+                <p>Give me a call</p>
+                <i class="fa-solid fa-phone" style="color: #ffdf00"></i>
+                <a href="tel:+2348122303939">+2348122303939</a>
+              </div>
+              <div class="contact-box">
+                <p>Send me an email</p>
+                <i class="fa-solid fa-envelope" style="color: #ffdf00"></i>
+                <a href="mailto:princelycoding.org@gmail.com" target="_blank"
+                  >princelycoding.org@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-box">
+                <p>Location</p>
+                <i class="fa-solid fa-location-dot" style="color: #ffdf00"></i>
+                <a
+                  href="https://www.google.com/maps?q=Ogun+State,+Nigeria"
+                  target="_blank"
+                  >Ogun, Nigeria</a
+                >
+              </div>
+              <div class="contact-box socials">
+                <p>Socials</p>
+                <a
+                  href="https://web.facebook.com/profile.php?id=61552477291245"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-facebook fa-2xl"
+                    style="color: #ffdf00"
+                  ></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/prince_coder10/"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-instagram fa-2xl"
+                    style="color: #ffdf00"
+                  ></i
+                ></a>
+                <a href="https://twitter.com/prince_coder10" target="_blank"
+                  ><i
+                    class="fa-brands fa-x-twitter fa-2xl"
+                    style="color: #ffdf00"
+                  ></i
+                ></a>
+                <a href="https://github.com/prince-coder10" target="_blank"
+                  ><i
+                    class="fa-brands fa-github fa-2xl"
+                    style="color: #ffdf00"
+                  ></i
+                ></a>
+                <a
+                  href="www.linkedin.com/in/prince-mbakwe-656127247"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-linkedin fa-2xl"
+                    style="color: #ffdf00"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="row">
+              <div class="col">
+                <a href="#" class="ft-logo">PRINCE.</a>
+                <p>
+                  Embracing Innovation, One Line of Code at a Time. © 2023
+                  Prince Mbakwe
+                </p>
+              </div>
+              <div class="col">
+                <h3>
+                  Office
+                  <div class="underline"><span></span></div>
+                </h3>
+                <p>KM 12</p>
+                <p>Idiroko Road</p>
+                <p>Otta, Ogun State, Nigeria</p>
+                <p class="email-id">princelycoding.org@gmail.com</p>
+                <h4>+2348122303939</h4>
+              </div>
+              <div class="col">
+                <h3>
+                  Links
+                  <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                  <li><a href="#content">Home</a></li>
+                  <li><a href="#about-me">About</a></li>
+                  <li><a href="#my-project">Projects</a></li>
+                  <li><a href="#contact-me">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>
+                  Newsletter
+                  <div class="underline"><span></span></div>
+                </h3>
+                <form action="#">
+                  <input
+                    type="email"
+                    placeholder="Enter your email adress"
+                    required
+                  />
+                  <button type="submit">
+                    <i
+                      class="fa-solid fa-arrow-right"
+                      style="color: #ffdf00"
+                    ></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <hr />
+            <p class="copyright">CodeNexus &copy; 2023 - All Rights Reserved</p>
+          </footer>
+        </div>
+      </body>
+      <script type="text/javascript" src="./src/script.js"></script>
+      <script type="text/javascript" src="./src/form.js"></script>
+    </html>
+  </head>
+</html>
