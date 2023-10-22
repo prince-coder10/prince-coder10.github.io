@@ -188,10 +188,12 @@ body {
     top: 0;
     position: fixed;
     background-color: #fff;
+    border: 2px solid #ffdf00;
     display: none;
   }
 
   #navbar a {
+    margin-top: 30px;
     color: #000 !important;
   }
 
@@ -200,6 +202,7 @@ body {
     color: #000;
     position: absolute;
     right: 0;
+    z-index: 99999 !important;
   }
 }
 
